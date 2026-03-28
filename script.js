@@ -4,19 +4,18 @@ const modal = document.querySelector('.modal');
 const openBtn = document.getElementById('openModal');
 const closeBtn = document.querySelector('.close-modal');
 
-// 2. When the user clicks the button, show the modal
+// 2. Open modal when the trigger button is clicked
 openBtn.onclick = function() {
     modal.style.display = "block";
 }
 
-// 3. When the user clicks the 'X', hide the modal
+// 3. Close modal when the 'X' is clicked
 closeBtn.onclick = function() {
     modal.style.display = "none";
 }
 
-// 4. When the user clicks anywhere outside the white box, hide the modal
+// 4. Close modal when clicking on the dark background
 window.onclick = function(event) {
-    // If the thing they clicked was the dark background overlay...
     if (event.target === modal) {
         modal.style.display = "none";
     }

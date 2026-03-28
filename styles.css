@@ -1,5 +1,4 @@
 /*  your css code here. If applicable */
-/* The Dark Background Overlay */
 .modal {
     display: none; 
     position: fixed; 
@@ -10,14 +9,12 @@
     background-color: rgba(0, 0, 0, 0.5); 
 }
 
-/* The White Box */
 .modal-content {
     background-color: #ffffff;
     margin: 10% auto; 
     width: 70%; 
 }
 
-/* The Green Header */
 .modal-header {
     background-color: #5cb85c; 
     color: white;
@@ -32,7 +29,6 @@
     font-size: 20px;
 }
 
-/* The Close 'X' */
 .close-modal {
     color: white;
     font-size: 28px;
@@ -40,7 +36,6 @@
     cursor: pointer;
 }
 
-/* The Body Text */
 .modal-body {
     padding: 20px;
     color: #333333;

@@ -1,18 +1,20 @@
 //your JS code here. If required.
-const modal = document.querySelector('.modal');
-const openBtn = document.getElementById('openModal');
-const closeBtn = document.querySelector('.close-modal');
-
-openBtn.onclick = function() {
-    modal.style.display = "block";
-}
-
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
+// This listens to every click on the webpage and checks what was clicked
+document.addEventListener('click', function(event) {
+    const modal = document.querySelector('.modal');
+    
+    // 1. If they clicked the Open Button...
+    if (event.target.id === 'openModal') {
+        modal.style.display = "block";
+    }
+    
+    // 2. If they clicked the 'X' Close Button...
+    if (event.target.classList.contains('close-modal')) {
+        modal.style.display = "none";
+    }
+    
+    // 3. If they clicked outside the box (on the dark background)...
     if (event.target === modal) {
         modal.style.display = "none";
     }
-}
+});
